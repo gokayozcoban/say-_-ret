@@ -1,0 +1,12 @@
+import random 
+def sayı_üret(start=0,end=49,adet=6): 
+    sayılar = set() 
+
+    while len(sayılar) < adet: 
+
+        sayılar.add(random.randrange(start,end)) 
+    return sayılar 
+
+
+for i in range(3):
+    print(sayı_üret())
